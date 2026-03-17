@@ -233,7 +233,7 @@ app.post("/send-otp", async (req, res) => {
           <div style="max-width:600px;margin:auto;background:#fff;border-radius:6px;overflow:hidden;">
             
             <div style="background:#002060;padding:15px;text-align:center;">
-              <img src="cid:ewslogo" style="height:60px;" />
+             
             </div>
 
             <div style="padding:20px;color:#333;">
