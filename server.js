@@ -20,7 +20,6 @@ const PORT = 3004;
 
 const logoPath = path.join(__dirname, "/Mobile_CMD/Images/newlogo.gif");
 
-
 /* ================= SMTP CONFIG ================= */
 
 const smtpUser = "riskalerts@ampl.net.in";
