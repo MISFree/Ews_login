@@ -455,7 +455,7 @@ app.post("/verify-otp", async (req, res) => {
     `;
 
 res.redirect(
-  "http://18.214.71.66:8080/RiskLive/successcopy.jsp?username=" + encodeURIComponent(username)
+  "http://18.214.71.66:8080/RiskLive/success.jsp?username=" + encodeURIComponent(username)
 );
 
 
