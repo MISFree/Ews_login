@@ -37,12 +37,13 @@ const transporter = nodemailer.createTransport({
   tls: { rejectUnauthorized: false }
 });
 
-/* ================= DB CONFIG ================= */
+/* ================= DB CONFIG  riskews.cg56q48iuc8c.us-east-1.rds.amazonaws.com,1433 ================= */
 
 const dbConfig = {
-  user: "My_Login",
-  password: "Ampl@12345",
-  server: "172.16.3.200",
+  user: "admin",
+  password: "Ampl12345",
+  server: "riskews.cg56q48iuc8c.us-east-1.rds.amazonaws.com", // only host
+  port: 1433, // separate port
   database: "Risk_EWS",
   options: {
     encrypt: false,
@@ -453,10 +454,10 @@ app.post("/verify-otp", async (req, res) => {
       WHERE UserName = ${username}
     `;
 
-   res.redirect(
-  "http://172.16.3.200:5806/Mobile_CMD/LoginBridge.jsp?user=" +
-  encodeURIComponent(username)
+res.redirect(
+  "http://18.214.71.66:8080/RiskLive/successcopy.jsp?username=" + encodeURIComponent(username)
 );
+
 
 
   } catch (err) {
@@ -469,5 +470,5 @@ app.post("/verify-otp", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log("✅ Risk EWS OTP Server Started");
-  console.log(`👉 http://172.16.3.200:${PORT}/`);
+  console.log(`👉 http://18.214.71.66/:${PORT}/`);
 });
