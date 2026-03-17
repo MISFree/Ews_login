@@ -18,7 +18,7 @@ const PORT = 3004;
 
 /* ================= LOGO PATH ================= */
 
-const logoPath = path.join(__dirname, "/newlogo.gif");
+const logoPath = path.join(__dirname, "/Mobile_CMD/Images/newlogo.gif");
 
 
 /* ================= SMTP CONFIG ================= */
@@ -159,7 +159,7 @@ const dbConfig = {
     </div>
 
     <div class="login-body">
-	 <img src="public/Mobile_CMD/Images/newlogo.gif" alt="Company Logo" style="height: 80px;">
+	 <img src="/Mobile_CMD/Images/newlogo.gif" alt="Company Logo" style="height: 80px;">
       <form method="POST" action="/send-otp">
         <label>
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
@@ -387,7 +387,7 @@ app.post("/send-otp", async (req, res) => {
     </div>
 
     <div class="otp-body"> 
-	 <img src="public/Mobile_CMD/Images/newlogo.gif" alt="Company Logo" style="height: 80px;">
+	 <img src="/Mobile_CMD/Images/newlogo.gif" alt="Company Logo" style="height: 80px;">
 	 
       <p>OTP has been sent to your registered email</p>
 
