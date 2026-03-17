@@ -1,4 +1,4 @@
- /************************************************
+  /************************************************
  * Risk EWS – Email OTP Login (Single File)
  ************************************************/
 
@@ -18,8 +18,8 @@ const PORT = 3004;
 
 /* ================= LOGO PATH ================= */
 
-const logoPath =
-  "C:/Users/Risk_Rajesh/EWS_Concentration/image/images.png";
+const logoPath = path.join(__dirname, "public/images/images.png");
+
 
 /* ================= SMTP CONFIG ================= */
 
