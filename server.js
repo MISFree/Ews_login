@@ -470,5 +470,5 @@ res.redirect(
 
 app.listen(PORT, () => {
   console.log("✅ Risk EWS OTP Server Started");
-  console.log(`👉 http://18.214.71.66/:${PORT}/`);
+  console.log(`👉 http://18.214.71.66:${PORT}/`);
 });
