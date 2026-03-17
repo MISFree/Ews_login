@@ -18,7 +18,7 @@ const PORT = 3004;
 
 /* ================= LOGO PATH ================= */
 
-const logoPath = path.join(__dirname, "newlogo.gif");
+const logoPath = path.join(__dirname, "logo.gif");
 
 
 /* ================= SMTP CONFIG ================= */
