@@ -18,7 +18,7 @@ const PORT = 3004;
 
 /* ================= LOGO PATH ================= */
 
-const logoPath = path.join(__dirname, "public/images/images.png");
+const logoPath = path.join(__dirname, "public/Mobile_CMD/Images");
 
 
 /* ================= SMTP CONFIG ================= */
